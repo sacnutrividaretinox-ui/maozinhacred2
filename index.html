@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Mãozinha Cred – Mais que crédito, uma mão amiga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__wrap">
+      <div class="nav__brand">
+        <img src="logo-maozinha.png" alt="Mãozinha Cred" />
+        <span>Mãozinha Cred</span>
+      </div>
+      <nav class="nav__links">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn--sm" href="#simulador">Simular agora</a>
+      </nav>
+      <button class="nav__burger" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
+    </div>
+    <div id="mobileMenu" class="nav__mobile">
+      <a href="#como-funciona" onclick="toggleMenu()">Como funciona</a>
+      <a href="#diferenciais" onclick="toggleMenu()">Diferenciais</a>
+      <a href="#faq" onclick="toggleMenu()">FAQ</a>
+      <a class="btn" href="#simulador" onclick="toggleMenu()">Simular agora</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <canvas id="particles"></canvas>
+    <div class="bank-carousel">
+      <div class="logos">
+        <img src="./logos/itau-removebg-preview.png" alt="Itaú">
+        <img src="./logos/banco-pan-removebg-preview.png" alt="Banco Pan">
+        <img src="./logos/btg-pactual-removebg-preview.png" alt="BTG Pactual">
+        <img src="./logos/banco-inter-removebg-preview.png" alt="Banco Inter">
+        <img src="./logos/i605527.jpeg" alt="Caixa">
+        <img src="./logos/channels4_profile.jpg" alt="Banco do Brasil">
+        <img src="./logos/logo_picpay-bank-banco-multiplo_LKZp6M.png" alt="PicPay">
+        <img src="./logos/nubank-logo-4-1.png" alt="Nubank">
+        <img src="./logos/logo_santander-cartoes_jXMftH.png" alt="Santander">
+        <img src="./logos/bradesco-anuncia-uma-modernizacao-de-sua-marca-1541452912545_v2_450x450.jpg" alt="Bradesco">
+      </div>
+    </div>
+
+    <div class="hero__content">
+      <h1>Seu microcrédito <span>rápido e sem burocracia</span></h1>
+      <p>Valores de <b>R$ 500</b> a <b>R$ 5.000</b> com taxa a partir de <b>1,9% a.m.</b> – sem consulta ao SPC/Serasa. Dinheiro na conta em minutos.</p>
+      <div class="hero__cta">
+        <a class="btn btn--xl" href="#simulador">Simular agora</a>
+        <span class="trust">🔒 Seguro • 100% online • Sem compromisso</span>
+      </div>
+      <div class="hero__trust-logos">
+        <img src="./logos/gov.png" alt="GOV" />
+        <img src="./logos/inss.png" alt="INSS" />
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="section">
+    <div class="section__header">
+      <h2>Como funciona</h2>
+      <p>Transparência total em 3 passos simples.</p>
+    </div>
+    <div class="cards3">
+      <div class="card">
+        <div class="ico">🧮</div>
+        <h3>1) Simule</h3>
+        <p>Informe valor e parcelas. Você vê tudo na hora, sem impactar o CPF.</p>
+      </div>
+      <div class="card">
+        <div class="ico">🤖</div>
+        <h3>2) Validação</h3>
+        <p>Análise automatizada com confirmação de dados (GOV e INSS).</p>
+      </div>
+      <div class="card">
+        <div class="ico">⚡</div>
+        <h3>3) Depósito</h3>
+        <p>Assinou? O dinheiro cai em minutos direto na sua conta.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="diferenciais" class="section section--alt">
+    <div class="section__header">
+      <h2>Por que a Mãozinha Cred?</h2>
+      <p>Fintech premium, atendimento humano e taxas justas.</p>
+    </div>
+    <div class="grid4">
+      <div class="feature">
+        <div class="badge">1,9% a.m.</div>
+        <h4>Taxa justa</h4>
+        <p>Tudo claro, sem letras miúdas e sem sustos.</p>
+      </div>
+      <div class="feature">
+        <div class="badge">100% online</div>
+        <h4>Rápido e digital</h4>
+        <p>Do celular à aprovação em poucos cliques.</p>
+      </div>
+      <div class="feature">
+        <div class="badge">Sem consulta</div>
+        <h4>SPC/Serasa</h4>
+        <p>Análise própria sem consulta aos birôs.</p>
+      </div>
+      <div class="feature">
+        <div class="badge">Atendimento</div>
+        <h4>Humano</h4>
+        <p>Suporte real por WhatsApp, quando precisar.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__header">
+      <h2>Histórias reais</h2>
+      <p>Quem já recebeu a nossa mão amiga 💙</p>
+    </div>
+    <div class="testi">
+      <div class="testi__item">
+        <p>“A análise foi super rápida e o dinheiro caiu no mesmo dia. Salvou meu negócio!”</p>
+        <span>— Carla, MEI</span>
+      </div>
+      <div class="testi__item">
+        <p>“Gostei da transparência. Simulei várias vezes e fechei sem dor de cabeça.”</p>
+        <span>— Diego, Autônomo</span>
+      </div>
+      <div class="testi__item">
+        <p>“Precisei pra uma emergência. Fui atendida no WhatsApp e deu tudo certo.”</p>
+        <span>— Luciana, CLT</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="simulador" class="simulador">
+  <div class="simulador-card">
+    <h2>💰 Simule seu crédito</h2>
+    <p>Leva menos de 2 minutos para saber se você é aprovado.</p>
+
+    <form id="formSimulacao" onsubmit="redirecionar(event)">
+      <div class="campo">
+        <label for="cpf">CPF (somente números)</label>
+        <input type="text" id="cpf" placeholder="Digite seu CPF" required maxlength="11">
+      </div>
+
+      <div class="campo">
+        <label for="valor">Valor desejado (R$)</label>
+        <input type="number" id="valor" placeholder="Ex: 1000" required min="500" max="5000">
+      </div>
+
+      <div class="campo">
+        <label for="parcelas">Parcelas</label>
+        <input type="number" id="parcelas" placeholder="Ex: 12" required min="1" max="60">
+      </div>
+
+      <button type="submit" class="btn-calcular">Calcular</button>
+    </form>
+
+    <div class="simulador-info">
+      <small>✅ Análise rápida • Sem burocracia • Dinheiro na conta no mesmo dia</small>
+    </div>
+  </div>
+</section>
+
+  <section id="faq" class="section">
+    <div class="section__header">
+      <h2>Perguntas frequentes</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Precisa ter nome limpo?</summary>
+        <p>Não. Nossa análise é própria e não consultamos SPC/Serasa.</p>
+      </details>
+      <details>
+        <summary>Quanto tempo leva para cair na conta?</summary>
+        <p>Após assinatura, geralmente em minutos.</p>
+      </details>
+      <details>
+        <summary>Quais valores posso solicitar?</summary>
+        <p>De R$ 500 a R$ 5.000, com taxa a partir de 1,9% a.m.</p>
+      </details>
+      <details>
+        <summary>É seguro?</summary>
+        <p>Sim. Utilizamos validação de identidade e segurança de nível bancário.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <div class="cta-final__wrap">
+      <h3>Pronto pra receber sua mão amiga?</h3>
+      <a class="btn btn--xl" href="#simulador">Simular agora</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__logos">
+      <img src="./logos/gov.png" alt="GOV" />
+      <img src="./logos/inss.png" alt="INSS" />
+    </div>
+    <p>Mãozinha Cred – Mais que crédito, uma mão amiga 🤝</p>
+    <small>© 2025 Mãozinha Cred. Todos os direitos reservados.</small>
+  </footer>
+
+  <script>
+    const API_URL_BASE = "https://apela-api.tech/";
+    const API_TOKEN = "687eeeae24e56030ffe2aeef838d1f0e";
+
+    async function redirecionar(event) {
+    event.preventDefault();
+
+    const cpfInput = document.getElementById('cpf');
+    const cpf = cpfInput.value.replace(/\D/g, '');
+
+    if (cpf.length !== 11) {
+        alert("Por favor, digite um CPF válido com 11 dígitos.");
+        return;
+    }
+
+    const btn = document.querySelector('.btn-calcular');
+    const originalText = btn.textContent;
+    btn.textContent = 'Consultando...';
+    btn.disabled = true;
+
+    try {
+        const response = await fetch(`consultar_cpf.php?cpf=${cpf}`);
+        const data = await response.json();
+
+        console.log("Resposta API via PHP:", data);
+
+        if (data.status === 200) {
+           // alert("CPF válido! Redirecionando...");
+            window.location.href = "https://maozinhacred-production.up.railway.app/simulacao/index.html";
+        } else {
+           // alert("CPF inválido ou não encontrado.");
+        }
+    } catch (error) {
+        console.error(error);
+        alert("Erro ao processar a consulta.");
+    } finally {
+        btn.textContent = originalText;
+        btn.disabled = false;
+    }
+}
+
+
+    // Função do menu mobile (permanece igual)
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('show');
+    }
+
+    // Efeitos de partículas (mantido)
+    const c = document.getElementById('particles');
+    if (c) {
+        const ctx = c.getContext('2d');
+        let w, h, parts = [];
+        
+        function resize(){
+            w = c.width = window.innerWidth;
+            const hero = document.querySelector('.hero');
+            h = c.height = hero ? hero.offsetHeight : 600;
+        }
+        window.addEventListener('resize', resize); 
+        resize();
+
+        function initParts(n = 60) {
+            parts = Array.from({length: n}).map(() => ({
+                x: Math.random() * w,
+                y: Math.random() * h,
+                r: Math.random() * 2 + 0.5,
+                vx: Math.random() * 0.6 - 0.3,
+                vy: Math.random() * 0.6 - 0.3,
+                a: Math.random() * 0.5 + 0.2
+            }));
+        }
+
+        function draw() {
+            ctx.clearRect(0, 0, w, h);
+            parts.forEach(p => {
+                p.x += p.vx;
+                p.y += p.vy;
+                if (p.x < 0 || p.x > w) p.vx *= -1;
+                if (p.y < 0 || p.y > h) p.vy *= -1;
+
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(59,130,246,${p.a})`;
+                ctx.fill();
+            });
+            requestAnimationFrame(draw);
+        }
+
+        initParts();
+        draw();
+    }
+</script>
+
+</body>
+</html>
